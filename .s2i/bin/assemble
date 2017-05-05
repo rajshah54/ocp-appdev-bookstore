@@ -115,5 +115,6 @@ if [ ! -z "$APPLICATION_ARTIFACT_URL" ]; then
         curl --insecure -L -u $DOWNLOAD_USER_CREDENTIALS -o $DEPLOY_DIR/$APP_NAME $APPLICATION_ARTIFACT_URL
     fi
 fi
-
+echo "Finished Bookstore Assemble"
+ls -lrt
 exit 0
