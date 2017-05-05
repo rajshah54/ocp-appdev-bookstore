@@ -116,5 +116,9 @@ if [ ! -z "$APPLICATION_ARTIFACT_URL" ]; then
     fi
 fi
 echo "Finished Bookstore Assemble"
-ls -lrt
+ls -lrt $LOCAL_SOURCE_DIR
+ls -lrt $DEPLOY_DIR
+pwd
+echo "Local: $LOCAL_SOURCE_DIR"  
+echo "Deploy: $DEPLOY_DIR"
 exit 0
