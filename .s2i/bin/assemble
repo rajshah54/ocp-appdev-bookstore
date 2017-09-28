@@ -58,6 +58,7 @@ if [ -f "$LOCAL_SOURCE_DIR/pom.xml" ] && [ "$DISABLE_ASSET_COMPILATION" != "true
   echo "ENV"
   env
   echo "END ENV"
+  ls -lrt /usr/share/maven
 
   # Execute the actual build
   mvn -e $MAVEN_ARGS
