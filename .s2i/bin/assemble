@@ -55,7 +55,9 @@ if [ -f "$LOCAL_SOURCE_DIR/pom.xml" ] && [ "$DISABLE_ASSET_COMPILATION" != "true
 
   echo "Using $(mvn --version)"
   
-  which mvn
+  echo "ENV"
+  env
+  echo "END ENV"
 
   # Execute the actual build
   mvn -e $MAVEN_ARGS
